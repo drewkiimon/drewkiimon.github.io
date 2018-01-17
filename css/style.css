@@ -1,4 +1,8 @@
-.jumbotron {
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cool-colors {
     background: #141E30;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #243B55, #141E30);
@@ -7,14 +11,37 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.jumbotron p{
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:visited,
+.navbar-light .navbar-brand:link {
     color: white;
 }
 
-.jumbotron h1{
-    color: white;
+.navbar-brand {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
-.jumbotron hr{
-    background: white;
+.navbar-brand {
+    float: none;
+}
+
+.social-media{
+    padding: 15px 0 15px 0;
+}
+
+#linkedin-icon{
+    color: #0077B5;
+}
+
+#github-icon{
+    color: black;
+}
+
+#soundcloud-icon{
+    color: #FF6900;
 }
