@@ -18,6 +18,10 @@
     color: white;
 }
 
+.green-color {
+    background: #657C2E;
+}
+
 .navbar-brand {
     float: left;
     padding: 15px;
@@ -30,18 +34,38 @@
     float: none;
 }
 
-.social-media{
+.social-media {
     padding: 15px 0 15px 0;
 }
 
-#linkedin-icon{
+#linkedin-icon {
     color: #0077B5;
 }
 
-#github-icon{
+#github-icon {
     color: black;
 }
 
-#soundcloud-icon{
+#soundcloud-icon {
     color: #FF6900;
 }
+
+#about-me {
+    background-color: #657C2E;
+}
+
+.about-me-info {
+    border-radius: 3px;
+    background-color: white;
+    margin: 0 1rem 1rem 1rem;
+}
+
+#greetings-text {
+    color: white;
+}
+
+.info-spacing{
+    margin-bottom: 0.5rem;
+}
+
+
