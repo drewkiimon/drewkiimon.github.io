@@ -73,6 +73,11 @@
     margin-bottom: 0.5rem;
 }
 
-#education-section{
+#education-section,
+#work-section{
     margin-bottom: 0;
+}
+
+hr{
+    margin: .5rem 0 .75rem 0;   
 }
