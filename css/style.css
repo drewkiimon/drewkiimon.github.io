@@ -81,3 +81,7 @@
 hr{
     margin: .5rem 0 .75rem 0;   
 }
+
+.remove-height{
+    height: 0;
+}
