@@ -85,3 +85,12 @@ hr{
 .row-bottom-margin{
     margin-bottom: 0px;
 }
+
+.company-links{
+    color: black;
+}
+
+.company-links:hover{
+    text-decoration: none;
+    color: black;
+}
