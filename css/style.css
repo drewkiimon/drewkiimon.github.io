@@ -2,6 +2,8 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+/* Colors */
+
 .cool-colors {
     background: #141E30;
     /* fallback for old browsers */
@@ -11,10 +13,6 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.dark-color{
-    background: #1d2120;
-}
-
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:visited,
@@ -22,11 +20,31 @@
     color: white;
 }
 
+/* Source: https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html */
+
+/* BRANDTS - Museum For Art & Visual Culture by Stupid Studios */
+
+.primary-color-1 {
+    background: #252839;
+}
+
+.primary-color-2 {
+    background: #677077;
+}
+
+.primary-color-3 {
+    background: #b5b5b7;
+}
+
+.highlight-color {
+    background: #f2b632;
+}
+
 .green-color {
     background: #657C2E;
 }
 
-.dark-blue-color{
+.dark-blue-color {
     background: #141E30;
 }
 
@@ -63,6 +81,7 @@
 }
 
 /* flatuicolors.com CLOUDS*/
+
 #resume {
     background-color: #ecf0f1;
 }
@@ -73,32 +92,42 @@
     margin: 0 1rem 1rem 1rem;
 }
 
+.work-experience-info {
+    border-radius: 3px;
+    background-color: white;
+}
+
 #greetings-text {
     color: white;
 }
 
-.info-spacing{
+.info-spacing {
     margin-bottom: 0.5rem;
 }
 
 #education-section,
-#work-section{
+#work-section {
     margin-bottom: 0;
 }
 
-hr{
-    margin: .5rem 0 .75rem 0;   
+hr {
+    margin: .5rem 0 .75rem 0;
 }
 
-.row-bottom-margin{
+.hr-white{
+    border-top: 1px solid white;
+    margin: .5rem 0 .75rem 0;
+}
+
+.row-bottom-margin {
     margin-bottom: 0px;
 }
 
-.company-links{
+.company-links {
     color: black;
 }
 
-.company-links:hover{
+.company-links:hover {
     text-decoration: none;
     color: black;
 }

@@ -17,7 +17,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-112931006-1');
-
     </script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -39,12 +38,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
     <!-- My Name -->
-    <nav class="navbar navbar-light cool-colors">
+    <nav class="navbar navbar-light primary-color-1">
         <a class="navbar-brand" href="#">Andrew Pagan</a>
     </nav>
 
     <!-- Social Media Links -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row social-media">
             <div class="col-md-4 text-center"><a href="https://www.linkedin.com/in/andrewpagan/" target="_blank" id="linkedin-icon"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
             <div class="col-md-4 text-center"><a href="https://github.com/drewkiimon" target="_blank" id="github-icon"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
@@ -52,9 +51,23 @@
         </div>
     </div>
 
+    <!-- End of Work Experience -->
+    <div class="container-fluid highlight-color">
+        <div class="row p-3">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-white text-center">Never Stop Growing <i class="fa fa-leaf"></i></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center text-white">
+                <p>A reminder that your education doesn't end after graduation, and the best investment you can make is in yourself.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- About Me -->
     <!-- Where I'm from, college, major, graduation date, what do I like to do, resume, email -->
-    <div class="container-fluid" id="about-me">
+    <div class="container-fluid primary-color-2">
         <div class="row">
             <div class="col-md-6 offset-md-3 p-3">
                 <div class="text-center" id="greetings-text">
@@ -112,14 +125,7 @@
 
     <!-- Résumé -->
     <!-- School, work experience, online coursework (post college) -->
-    <div class="container-fluid" id="resume">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="p-3 text-center">
-                    <h6>Résumé</h6>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid pt-3" id="resume">
         <!-- Education -->
         <div class="row">
             <div class="col-md-6 offset-md-3">
@@ -247,68 +253,61 @@
                 <p>Nov 2016</p>
             </div>
         </div>
-
-        <!-- End of Education -->
-        <!-- Work Experience-->
-        <div class="row">
+    </div>
+    <!-- End of Education -->
+    <!-- Work Experience-->
+    <div class="container-fluid primary-color-1 pt-3">
+        <div class="row text-white">
             <div class="col-md-6 offset-md-3">
                 <h5 id="work-section">Work Experience</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <hr>
+                <hr class="hr-white">
             </div>
         </div>
-        <div class="row info-spacing ">
-            <div class="col-md-6 offset-md-3 ">
-                <p class="row-bottom-margin"><b><a href="https://www.glassdoor.com/Reviews/Genentech-Reviews-E274.htm" target="_blank" class="company-links">Genentech</a></b>, South San Francisco, CA</p>
+        <!-- Work experience starts -->
+        <div class="col-md-6 offset-md-3">
+            <div class="work-experience-info p-3">
+                <div class="container-fluid">
+                    <div class="row info-spacing ">
+                        <p class="row-bottom-margin"><b><a href="https://www.glassdoor.com/Reviews/Genentech-Reviews-E274.htm" target="_blank" class="company-links">Genentech</a></b>, South San Francisco, CA</p>
+                    </div>
+                    <div class="row">
+                        <p><i>Business Analyst</i> (May 2017-Present) </p>
+                    </div>
+                    <!-- Genentech Information -->
+                    <div class="row">
+                        <ul>
+                            <li>Reconciled company financial data using Tableau to assess expenditure anomalies and flag irregular spends for lab managers</li>
+                            <li>Redesigned Facilities’ passdown tool to automatically email daily work updates to users and archive completed work data via Google App Script / JavaScript</li>
+                            <li>Independently developed a department-wide savings tracker with data visualization established on a Tableau server, which saved an estimated 960 working hours per year</li>
+                            <li>Data cleaned and reorganized large Excel files using Python frameworks such as Pandas</li>
+                            <li>Consulted with customers to establish user requirements needed to develop innovative, time saving programs</li>
+                        </ul>
+                    </div>
+                    <div class="row info-spacing ">
+
+                        <p class="row-bottom-margin"><b><a href="https://www.glassdoor.com/Reviews/Hitachi-Data-Systems-Reviews-E13529.htm" target="_blank" class="company-links">Hitachi Data Systems</a></b>, Santa Clara, CA</p>
+                    </div>
+                    <div class="row">
+                        <p><i>Software QA Engineer</i> (Jan 2017-Apr 2017) </p>
+                    </div>
+                    <div class="row">
+                        <ul class="row-bottom-margin">
+                            <li>Wrote, debugged, and executed Python using HDS’s internal QA libraries</li>
+                            <li>Contributed to QA libraries with scripts that created random distributed systems for PAXOS testing, mounted and deployed VMs, and automated cluster data changes</li>
+                            <li>Reproduced bugs via Python scripts on HDS’s Hyper-Converge Scale-Out Platform</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <p><i>Business Analyst</i> (May 2017-Present) </p>
-            </div>
-        </div>
-        <!-- Genentech Information -->
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <ul>
-                    <li>Reconciled company financial data using Tableau to assess expenditure anomalies and flag irregular spends for lab managers</li>
-                    <li>Redesigned Facilities’ passdown tool to automatically email daily work updates to users and archive completed work data via Google App Script / JavaScript</li>
-                    <li>Independently developed a department-wide savings tracker with data visualization established on a Tableau server, which saved an estimated 960 working hours per year</li>
-                    <li>Data cleaned and reorganized large Excel files using Python frameworks such as Pandas</li>
-                    <li>Consulted with customers to establish user requirements needed to develop innovative, time saving programs</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row info-spacing ">
-            <div class="col-md-6 offset-md-3 ">
-                <p class="row-bottom-margin"><b><a href="https://www.glassdoor.com/Reviews/Hitachi-Data-Systems-Reviews-E13529.htm" target="_blank" class="company-links">Hitachi Data Systems</a></b>, Santa Clara, CA</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <p><i>Software QA Engineer</i> (Jan 2017-Apr 2017) </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <ul>
-                    <li>Wrote, debugged, and executed Python using HDS’s internal QA libraries</li>
-                    <li>Contributed to QA libraries with scripts that created random distributed systems for PAXOS testing, mounted and deployed VMs, and automated cluster data changes</li>
-                    <li>Reproduced bugs via Python scripts on HDS’s Hyper-Converge Scale-Out Platform</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End of Work Experience -->
-    <div class="container-fluid dark-blue-color">
-        <div class="row p-3">
-            <div class="col-md-6 offset-md-3">
-                <h2 class="text-white text-center">Never Stop Growing <i class="fa fa-leaf"></i></h2>
-            </div>
-        </div>
+
+
+
+        <!-- Work experience ends -->
     </div>
 
     <!-- Portfolio -->
