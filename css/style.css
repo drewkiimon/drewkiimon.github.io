@@ -13,10 +13,11 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar-light .navbar-brand,
-.navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand:visited,
-.navbar-light .navbar-brand:link {
+/* NAVBAR STYLING */
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:visited,
+.navbar-brand:link {
     color: white;
 }
 
@@ -46,18 +47,6 @@
 
 .dark-blue-color {
     background: #141E30;
-}
-
-.navbar-brand {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-}
-
-.navbar-brand {
-    float: none;
 }
 
 .social-media {
