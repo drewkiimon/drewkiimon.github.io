@@ -13,14 +13,6 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* NAVBAR STYLING */
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:visited,
-.navbar-brand:link {
-    color: white;
-}
-
 /* Source: https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html */
 
 /* BRANDTS - Museum For Art & Visual Culture by Stupid Studios */
@@ -47,6 +39,15 @@
 
 .dark-blue-color {
     background: #141E30;
+}
+
+/* NAVBAR STYLING */
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:visited,
+.navbar-brand:link {
+    color: white;
 }
 
 .social-media {
@@ -103,7 +104,7 @@ hr {
     margin: .5rem 0 .75rem 0;
 }
 
-.hr-white{
+.hr-white {
     border-top: 1px solid white;
     margin: .5rem 0 .75rem 0;
 }
