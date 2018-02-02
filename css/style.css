@@ -51,11 +51,10 @@
 }
 
 .navbar-brand {
-    float: left;
+    float: none;
     text-align: center;
     width: 100%;
     margin: 0;
-    float: none;
 }
 
 .social-media {
