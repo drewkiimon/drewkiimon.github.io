@@ -50,6 +50,14 @@
     color: white;
 }
 
+.navbar-brand {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+
 .social-media {
     padding: 15px 0 15px 0;
 }
