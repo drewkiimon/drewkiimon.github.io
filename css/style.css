@@ -43,7 +43,14 @@
 
 /* NAVBAR STYLING */
 
-/*
+.navbar-brand.abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:visited,
@@ -51,6 +58,11 @@
     color: white;
 }
 
+.dropdown-toggle::after {
+    display: none
+}
+
+/*
 .navbar-brand {
     float: none;
     text-align: center;
