@@ -38,7 +38,26 @@
 
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg primary-color-1 sticky-top" id="theNav">
-        <a class="navbar-brand" href="#">Andrew Pagan</a>
+        <a class="navbar-brand abs" href="#">Andrew Pagan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-align-justify"></i>
+  </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#aboutme">About Me</a>
+                            <a class="dropdown-item" href="#">Work Experience</a>
+                            <a class="dropdown-item" href="#">Repo</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Social Media Links -->
@@ -50,7 +69,7 @@
         </div>
     </div>
 
-    <!-- End of Work Experience -->
+    <!-- Never Stop Growing-->
     <div class="container-fluid highlight-color">
         <div class="row p-3">
             <div class="col-md-6 offset-md-3">
@@ -66,7 +85,7 @@
 
     <!-- About Me -->
     <!-- Where I'm from, college, major, graduation date, what do I like to do, resume, email -->
-    <div class="container-fluid primary-color-2">
+    <div class="container-fluid primary-color-2" id = "aboutme">
         <div class="row">
             <div class="col-md-6 offset-md-3 p-3">
                 <div class="text-center" id="greetings-text">
