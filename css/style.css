@@ -33,14 +33,6 @@
     background: #f2b632;
 }
 
-.green-color {
-    background: #657C2E;
-}
-
-.dark-blue-color {
-    background: #141E30;
-}
-
 /* NAVBAR STYLING */
 
 .navbar-brand.abs {
@@ -141,4 +133,25 @@ hr {
 .company-links:hover {
     text-decoration: none;
     color: black;
+}
+
+/* Image stuff */
+
+.centerplease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    height: inherit;
+    width: inherit;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
