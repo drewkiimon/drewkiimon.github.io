@@ -6,6 +6,7 @@ $(document).ready(function () {
     var devMatchHidden = true;
     var andrewpaganHidden = true;
 
+    // Initially hide text
     $(".text").hide();
 
     $("#aboutMeJump").on("click", function () {
@@ -31,7 +32,20 @@ $(document).ready(function () {
             scrollTop: y + wastedSpace
         });
     });
-    
+
+    $("#projectJump").on("click", function () {
+        var y = $("#projectExp").offset().top;
+        // $(this).attr("href", "#aboutme");
+        $('html, body').animate({
+            scrollTop: y + wastedSpace
+        });
+    });
+
+    $('#repoButton').on("click", function () {
+        var win = window.open('https://github.com/drewkiimon/drewkiimon.github.io/', '_blank');
+        win.focus();
+    });
+
     // Buitton for Projects
     $("#devMatchImage").on("click", function () {
         if (devMatchHidden) {
