@@ -41,6 +41,7 @@
     left: 0;
     text-align: center;
     margin: 0 auto;
+    font-size: 1.5vw;
 }
 
 .navbar-brand,
@@ -87,6 +88,12 @@
 
 #resume {
     background-color: #ecf0f1;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+    font-weight: bold;
+
 }
 
 .about-me-info {
