@@ -5,6 +5,8 @@ $(document).ready(function () {
     var wastedSpace = -54;
     var devMatchHidden = true;
     var andrewpaganHidden = true;
+    var angularHidden = true;
+    var reactHidden = true;
 
     // Initially hide text
     $(".text").hide();
@@ -46,7 +48,7 @@ $(document).ready(function () {
         win.focus();
     });
 
-    // Buitton for Projects
+    // Button for Projects
     $("#devMatchImage").on("click", function () {
         if (devMatchHidden) {
             $("#devMatchText").fadeIn();
@@ -77,6 +79,38 @@ $(document).ready(function () {
             $("#andrewpaganText").fadeOut();
             $("#andrewpaganImage").fadeTo("slow", 1);
             andrewpaganHidden = true;
+        }
+    });
+    
+    $("#angularImage").on("click", function () {
+        if (angularHidden) {
+            $("#angularText").fadeIn();
+            $("#angularImage").fadeTo("slow", 0.25);
+            angularHidden = false;
+        }
+    });
+
+    $("#angularText").on("click", function () {
+        if (!(angularHidden)) {
+            $("#angularText").fadeOut();
+            $("#angularImage").fadeTo("slow", 1);
+            angularHidden = true;
+        }
+    });
+    
+    $("#reactImage").on("click", function () {
+        if (reactHidden) {
+            $("#reactText").fadeIn();
+            $("#reactImage").fadeTo("slow", 0.25);
+            reactHidden = false;
+        }
+    });
+
+    $("#reactText").on("click", function () {
+        if (!(reactHidden)) {
+            $("#reactText").fadeOut();
+            $("#reactImage").fadeTo("slow", 1);
+            reactHidden = true;
         }
     });
 });
