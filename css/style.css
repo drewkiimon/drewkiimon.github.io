@@ -137,9 +137,15 @@ hr {
     color: black;
 }
 
-.company-links:hover {
+.company-links:hover,
+.project-links:hover{
     text-decoration: none;
     color: black;
+}
+
+.project-links {
+    color: white;
+    font-weight: bold;
 }
 
 /* Image stuff */
