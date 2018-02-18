@@ -1,14 +1,40 @@
-<div class="row bg-white ml-1 mr-1 mt-2 mb-2">
-    <div class="col-lg-10 offset-lg-1 p-2">
-       <!-- Title of the Blog-->
-        <h4 class="text-center font-weight-bold">console.log("hello world!");</h4>
-        <!-- Manual timestamp-->
-        <h6 class="font-italic text-center text-muted">February 17, 2018</h6>
-        <!-- Write stuff -->
-        <div class="pl-3 pr-3">
-            <p class="pt-3">Welcome to the first entry of my blog on my portfolio / personal website <a href="http://www.andrewpagan.me/" target="_blank">andrewpagan.me</a>! I appreciate you taking the time to look at my blog and hopefully learn something with me. The inspiration for this blog comes from my recent technical phone interview with SoFi in San Francisco. I spent numerous hours sitting on my computer practicing code, watching YouTube tutorials, and anything I could find that would hopefully help my succeed during my phone interview. However, after my phone interview I felt like a felt short. There were things I thought I knew, but it was evident that I <u>knew of it</u>, but not how to <u>apply it</u>. </p>
-            <p>Hence this "blog" you might say. Whenever I'm learning something new and need a place to explain it, I'll do it here. If you find anything incorrect, don't be afraid to email me. In the future I'll try to implement a comment system or some system that works with GitHub Pages (how I host my website).</p>
-            <p>Thanks for reading! First entry <span class="font-weight-light">D O N E !</span></p>
-        </div>
-    </div>
-</div>
+                    <div class="row bg-white ml-1 mr-1 mt-2 mb-2">
+                        <div class="col-lg-10 offset-lg-1 p-2">
+                            <h4 class="text-center font-weight-bold">closures</h4>
+                            <h6 class="font-italic text-center text-muted">February 17, 2018</h6>
+                            <div class="pl-3 pr-3">
+                                <p class="pt-3">One of the biggest questions that got me stuck in my most recent phone interview was <b>closure</b>. Not the relationship type of closure, but JavaScript closure. I told the interviewer in an act of nervousness that closurse were "inner functions that have access to global variables." That wasn't very... correct. Not at all. In short from what I've found online, closures are <u>functions with preserved data</u>. Let me explain after this code block.</p>
+                                <pre class="javascript-code"><code><span class="code-orange">
+var</span> addTo = <span class="code-orange">function</span>(passed) {
+    <span class="code-orange">var</span> add = <span class="code-orange">function</span>(inner) {
+        <span class="code-orange">return</span> passed + inner;
+    };
+    <span class="code-orange">return</span> add;
+};
+
+<span class="code-orange">var</span> addThree = <span class="code-orange">new</span> addTo(<span class="code-red">3</span>);
+<span class="code-orange">var</span> addFour = <span class="code-orange">new</span> addTo(<span class="code-red">4</span>);
+
+<span class="code-green">console</span>.dir(addThree); <span class="code-comment">// Closure is 3</span>
+<span class="code-green">console</span>.dir(addFour); <span class="code-comment">// Closure is 4</span>
+
+<span class="code-comment">// Closure preserves a value inside of the function
+// Closures are functions with preserved data</span>
+
+<span class="code-green">console</span>.log(addThree(<span class="code-red">1</span>));<span class="code-comment"> // Output is 4</span>
+<span class="code-green">console</span>.log(addFour(<span class="code-red">1</span>));<span class="code-comment"> // Output is 5</span>
+            </code></pre>
+                                <p><a href="https://jsfiddle.net/drewkiimon/bpg8j4vd/">Click here to see code on JSFiddle</a></p>
+                                <p>To be demonstrate how it all works, I have the above example. We have a function called <code>addTo</code> that takes in a parameter passed. Then, inside we have an inner function named <code>add</code> that takes in another parameter inner. <code>addTo</code> returns add, and add returns passed + inner. So the entire function relies on add to finish to return the addition of the two numbers.</p>
+                                <p>Next, I declare two variables that create a new <code>addTo</code> object that takes in 3, and the other taking in 4 as their parameter. Now if you console.dir instead of console.log, it'll give you a detailed look of the objects. In the Console of Chrome's Developer tools you will see a <var>f add(inner)</var> with a little dropdown arrow next to it. After clicking the dropdown, and you go to <var>[[Scopes]]</var> you'll see a closure dropdown that will show a "3" for your first variable and a "4" for the other. This is demonstrated below.</p>
+                                <img src="../images/Capture.PNG" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                                <p>So, the variables we made will always preserve these <var>closures</var>. No matter how many times we console.log(addThree(1)), addThree will always preserve that variable 3. The variable 3 is now a <b>private variable</b> to the object.</p>
+                                <p>w3schools defines closures pretty well.</p>
+                                <div class="d-block bg-dark text-white p-2">
+                                    A closure is a function having access to the parent scope, even after the parent function has closed.
+                                </div>
+                                <p class="pt-3">Even though the function is closed, our variables are still holding onto these private variables even though they cannot be directly called, unless you invoke the second inner function.</p>
+                                <p>Thanks for reading! I am still learning closurse, and I'm sure I'll evenetually come back and update this once I fully grasp it, but for now this will work. Second entry <span class="font-weight-light">D O N E !</span></p>
+                            </div>
+                        </div>
+                    </div>
