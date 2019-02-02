@@ -8,11 +8,12 @@ $link-color: #454545;
 }
 
 .main-body {
-    padding: 24px 122px;
     font-family: 'Asap Condensed', sans-serif;
+    padding: 24px 122px;
 
     nav {
         display: flex;
+        font-weight: 400;
 
         .icon {
             margin-right: auto;
@@ -30,5 +31,11 @@ $link-color: #454545;
                 }
             }
         }
+    }
+
+    .header {
+        font-weight: 600;
+        margin-top: 108px;
+        font-size: 48px;
     }
 }

@@ -5,11 +5,12 @@
 }
 
 .main-body {
-  padding: 24px 122px;
   font-family: "Asap Condensed", sans-serif;
+  padding: 24px 122px;
 }
 .main-body nav {
   display: flex;
+  font-weight: 400;
 }
 .main-body nav .icon {
   margin-right: auto;
@@ -23,6 +24,11 @@
 }
 .main-body nav ul li:not(:last-child) {
   margin-right: 24px;
+}
+.main-body .header {
+  font-weight: 600;
+  margin-top: 108px;
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=styles.css.map */
