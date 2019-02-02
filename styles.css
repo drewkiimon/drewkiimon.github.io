@@ -4,31 +4,97 @@
   padding: 0;
 }
 
-.main-body {
+body {
   font-family: "Asap Condensed", sans-serif;
   padding: 24px 122px;
+  color: #454545;
 }
-.main-body nav {
+body nav {
   display: flex;
   font-weight: 400;
 }
-.main-body nav .icon {
+body nav .icon {
   margin-right: auto;
 }
-.main-body nav ul {
+body nav ul {
   margin-top: 16px;
 }
-.main-body nav ul li {
+body nav ul li {
   display: inline-block;
   font-size: 18px;
 }
-.main-body nav ul li:not(:last-child) {
+body nav ul li:not(:last-child) {
   margin-right: 24px;
 }
-.main-body .header {
-  font-weight: 600;
-  margin-top: 108px;
+body .header {
+  margin: 108px 0;
+}
+body .header h1 {
   font-size: 48px;
+}
+body .about-me {
+  margin-bottom: 32px;
+}
+body .about-me h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+body .about-me p {
+  line-height: 1.41;
+}
+body .information .section {
+  margin-bottom: 32px;
+}
+body .information .section .section-header {
+  width: 20%;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+}
+body .information .section .section-info {
+  width: 79%;
+  display: inline-block;
+}
+body .information .section .section-info .section-info-header {
+  display: inline-block;
+}
+body .information .section .section-info .section-info-header:not(:first-child) {
+  margin-top: 16px;
+}
+body .information .section .section-info .section-info-header h3 {
+  font-size: 18px;
+}
+body .information .section .section-info .section-info-header h4 {
+  color: #A1A1A1;
+  font-size: 16px;
+}
+body .information .section .section-info .section-info-dates {
+  font-size: 16px;
+  float: right;
+  display: inline-block;
+}
+body .information .section .section-info .section-info-points {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+body .information .section .section-info .section-info-points li {
+  line-height: 1.41;
+}
+body .information .section .section-info .section-info-points li:not(:first-child) {
+  margin-top: 3px;
+}
+body .information .section .section-info .overview-container {
+  display: inline-block;
+  float: left;
+  width: 20%;
+}
+body .information .section .section-info .overview-container ul {
+  margin: 0px;
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
