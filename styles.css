@@ -125,6 +125,8 @@ body footer {
   padding: 75px 122px 40px 122px;
 }
 body footer .details {
+  display: inline-block;
+  width: 50%;
   height: 100%;
 }
 body footer .details .name {
@@ -140,11 +142,31 @@ body footer .details a {
   color: #00B087;
 }
 body footer .details .copyright {
-  height: 100%;
   font-size: 14px;
+  margin-top: 40px;
 }
 body footer .details .copyright span {
   vertical-align: bottom;
+}
+body footer .social-media-links {
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+body footer .social-media-links ul {
+  list-style: none;
+}
+body footer .social-media-links ul li {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+body footer .social-media-links ul li:not(:last-child) {
+  margin-right: 32px;
+}
+body footer .social-media-links ul li .fab {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
