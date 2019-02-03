@@ -89,12 +89,17 @@ body .information .section .section-info .overview-container {
   float: left;
   width: 20%;
 }
+body .information .section .section-info .overview-container:not(:last-child) {
+  margin-right: 62px;
+}
 body .information .section .section-info .overview-container ul {
-  margin: 0px;
   list-style: none;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+body .information .section .section-info .overview-container ul li {
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
