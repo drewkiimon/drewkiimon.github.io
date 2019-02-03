@@ -1,19 +1,26 @@
-$link-color: #454545;
+$main-color: #454545;
+$secondary-color: #A1A1A1;
+$mint-color: #42CC9C;
+$mint-secondary-color: #00B087;
+$asap-bold: 700;
+$asap-medium: 600;
+$asap-regular: 400;
 
-// Reset CSS to avoid future problems
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+body {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-.main-body {
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Asap Condensed',
+    sans-serif;
     padding: 24px 122px;
+    color: $main-color;
 
     nav {
         display: flex;
-        font-weight: 400;
+        font-weight: $asap-regular;
 
         .icon {
             margin-right: auto;
@@ -34,8 +41,114 @@ $link-color: #454545;
     }
 
     .header {
-        font-weight: 600;
-        margin-top: 108px;
-        font-size: 48px;
+        margin: 108px 0;
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+    .about-me {
+        margin-bottom: 32px;
+
+        h2 {
+            font-size: 26px;
+            font-weight: $asap-medium;
+            margin-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.41;
+        }
+    }
+
+    .information {
+        position: relative;
+
+        .section {
+            margin-bottom: 32px;
+
+            .section-header {
+                width: 20%;
+                display: inline-block;
+                font-size: 20px;
+                vertical-align: top;
+            }
+
+            .section-info {
+                width: 79%;
+                display: inline-block;
+
+                .section-info-header {
+                    &:not(:first-child) {
+                        margin-top: 16px;
+                    }
+
+                    display: inline-block;
+
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    h4 {
+                        color: $secondary-color;
+                        font-size: 16px;
+                    }
+                }
+
+                .section-info-dates {
+                    font-size: 16px;
+                    float: right;
+                    display: inline-block;
+                }
+
+                .section-info-points {
+                    margin-top: 16px;
+                    margin-left: 16px;
+
+                    li {
+                        line-height: 1.41;
+
+                        &:not(:first-child) {
+                            margin-top: 3px;
+                        }
+                    }
+                }
+
+                .overview-container {
+                    display: inline-block;
+                    float: left;
+                    width: 20%;
+
+                    &:not(:last-child) {
+                        margin-right: 62px;
+                    }
+
+                    .overview-header {
+                        font-size: 18px;
+                        margin-bottom: 3px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        columns: 2;
+                        -webkit-columns: 2;
+                        -moz-columns: 2;
+
+                        li {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vertical-line {
+            position: absolute;
+            left: 18%;
+            background: $mint-color;
+            width: 2px;
+            height: 100%;
+        }
     }
 }
