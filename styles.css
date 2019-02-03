@@ -1,13 +1,12 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Asap Condensed", sans-serif;
   padding: 24px 122px;
   color: #454545;
+}
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body nav {
   display: flex;
@@ -42,6 +41,9 @@ body .about-me h2 {
 }
 body .about-me p {
   line-height: 1.41;
+}
+body .information {
+  position: relative;
 }
 body .information .section {
   margin-bottom: 32px;
@@ -92,6 +94,10 @@ body .information .section .section-info .overview-container {
 body .information .section .section-info .overview-container:not(:last-child) {
   margin-right: 62px;
 }
+body .information .section .section-info .overview-container .overview-header {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
 body .information .section .section-info .overview-container ul {
   list-style: none;
   columns: 2;
@@ -100,6 +106,13 @@ body .information .section .section-info .overview-container ul {
 }
 body .information .section .section-info .overview-container ul li {
   width: 50%;
+}
+body .information .vertical-line {
+  position: absolute;
+  left: 18%;
+  background: #42CC9C;
+  width: 2px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
