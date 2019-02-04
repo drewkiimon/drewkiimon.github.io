@@ -13,12 +13,13 @@ body {
         padding: 0;
     }
 
+    margin: 0;
     font-family: 'Asap Condensed',
     sans-serif;
-    padding: 24px 122px;
     color: $main-color;
 
     nav {
+        padding: 24px 122px 0 122px;
         display: flex;
         font-weight: $asap-regular;
 
@@ -41,6 +42,7 @@ body {
     }
 
     .header {
+        padding: 0 122px;
         margin: 108px 0;
 
         h1 {
@@ -50,6 +52,7 @@ body {
 
     .about-me {
         margin-bottom: 32px;
+        padding: 0 122px;
 
         h2 {
             font-size: 26px;
@@ -64,6 +67,7 @@ body {
 
     .information {
         position: relative;
+        padding: 0 122px;
 
         .section {
             margin-bottom: 32px;
@@ -145,10 +149,78 @@ body {
 
         .vertical-line {
             position: absolute;
-            left: 18%;
+            left: 24%;
             background: $mint-color;
             width: 2px;
             height: 100%;
+        }
+    }
+
+    footer {
+        height: 250px;
+        color: white;
+        background: $main-color;
+        padding: 75px 122px 40px 122px;
+
+        .details {
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+
+            .name {
+                display: block;
+                font-size: 24px;
+                font-weight: $asap-medium;
+                margin-bottom: 5px;
+            }
+
+            .chat {
+                display: block;
+            }
+
+            a {
+                color: $mint-secondary-color;
+                text-decoration: none;
+            }
+
+            .copyright {
+                font-size: 14px;
+                margin-top: 40px;
+
+
+                span {
+                    vertical-align: bottom;
+                }
+            }
+        }
+
+        .social-media-links {
+            display: inline-block;
+            float: right;
+            width: 50%;
+
+            ul {
+                list-style: none;
+                float: right;
+
+                li {
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+
+                    a {
+                        color: white;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 32px;
+                    }
+
+                    .fab {
+                        font-size: 32px;
+                    }
+                }
+            }
         }
     }
 }
