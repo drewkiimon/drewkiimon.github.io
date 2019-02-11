@@ -445,6 +445,7 @@ body {
   }
   @media screen and (max-width: $mobile-break) {
     nav {
+      margin: 0 12px;
       padding-top: 24px;
       display: flex;
       font-weight: $asap-regular;
@@ -468,7 +469,7 @@ body {
     }
 
     .header {
-      margin: 108px 0;
+      margin: 108px 12px;
 
       h1 {
         font-size: 48px;
@@ -476,7 +477,7 @@ body {
     }
 
     .about-me {
-      margin-bottom: 32px;
+      margin: 0 12px 32px 12px;
 
       h2 {
         font-size: 26px;
@@ -490,8 +491,7 @@ body {
     }
 
     .information {
-      margin: 0 122px;
-
+      margin: 0 12px;
       .p-rel {
         position: relative;
       }
@@ -500,15 +500,14 @@ body {
         margin-bottom: 32px;
 
         .section-header {
-          width: 20%;
-          display: inline-block;
+          display: block;
+          margin-bottom: 12px;
           font-size: 20px;
           vertical-align: top;
         }
 
         .section-info {
-          width: 79%;
-          display: inline-block;
+          display: block;
 
           .section-info-header {
             &:not(:first-child) {
@@ -576,11 +575,7 @@ body {
       }
 
       .vertical-line {
-        position: absolute;
-        left: 18%;
-        background: $mint-color;
-        width: 2px;
-        height: 100%;
+        display: none;
       }
     }
 
@@ -588,12 +583,10 @@ body {
       height: 250px;
       color: white;
       background: $main-color;
-      padding: 75px 122px 40px 122px;
+      padding: 75px 12px 40px 12px;
 
       .details {
-        display: inline-block;
-        width: 50%;
-        height: 100%;
+        display: block;
 
         .name {
           display: block;
@@ -622,9 +615,7 @@ body {
       }
 
       .social-media-links {
-        display: inline-block;
-        float: right;
-        width: 50%;
+        display: block;
 
         ul {
           list-style: none;

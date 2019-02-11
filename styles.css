@@ -349,6 +349,7 @@ body * {
 }
 @media screen and (max-width: 740px) {
   body nav {
+    margin: 0 12px;
     padding-top: 24px;
     display: flex;
     font-weight: 400;
@@ -367,13 +368,13 @@ body * {
     margin-right: 24px;
   }
   body .header {
-    margin: 108px 0;
+    margin: 108px 12px;
   }
   body .header h1 {
     font-size: 48px;
   }
   body .about-me {
-    margin-bottom: 32px;
+    margin: 0 12px 32px 12px;
   }
   body .about-me h2 {
     font-size: 26px;
@@ -384,7 +385,7 @@ body * {
     line-height: 1.41;
   }
   body .information {
-    margin: 0 122px;
+    margin: 0 12px;
   }
   body .information .p-rel {
     position: relative;
@@ -393,14 +394,13 @@ body * {
     margin-bottom: 32px;
   }
   body .information .section .section-header {
-    width: 20%;
-    display: inline-block;
+    display: block;
+    margin-bottom: 12px;
     font-size: 20px;
     vertical-align: top;
   }
   body .information .section .section-info {
-    width: 79%;
-    display: inline-block;
+    display: block;
   }
   body .information .section .section-info .section-info-header {
     display: inline-block;
@@ -453,22 +453,16 @@ body * {
     width: 50%;
   }
   body .information .vertical-line {
-    position: absolute;
-    left: 18%;
-    background: #42cc9c;
-    width: 2px;
-    height: 100%;
+    display: none;
   }
   body footer {
     height: 250px;
     color: white;
     background: #454545;
-    padding: 75px 122px 40px 122px;
+    padding: 75px 12px 40px 12px;
   }
   body footer .details {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
+    display: block;
   }
   body footer .details .name {
     display: block;
@@ -491,9 +485,7 @@ body * {
     vertical-align: bottom;
   }
   body footer .social-media-links {
-    display: inline-block;
-    float: right;
-    width: 50%;
+    display: block;
   }
   body footer .social-media-links ul {
     list-style: none;
