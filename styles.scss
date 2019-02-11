@@ -1,226 +1,227 @@
 $main-color: #454545;
-$secondary-color: #A1A1A1;
-$mint-color: #42CC9C;
-$mint-secondary-color: #00B087;
+$secondary-color: #a1a1a1;
+$mint-color: #42cc9c;
+$mint-secondary-color: #00b087;
 $asap-bold: 700;
 $asap-medium: 600;
 $asap-regular: 400;
 
 body {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  margin: 0;
+  font-family: "Asap Condensed", sans-serif;
+  color: $main-color;
+
+  nav {
+    padding: 24px 122px 0 122px;
+    display: flex;
+    font-weight: $asap-regular;
+
+    .icon {
+      margin-right: auto;
     }
 
-    margin: 0;
-    font-family: 'Asap Condensed',
-    sans-serif;
-    color: $main-color;
+    ul {
+      margin-top: 16px;
 
-    nav {
-        padding: 24px 122px 0 122px;
-        display: flex;
-        font-weight: $asap-regular;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-        .icon {
-            margin-right: auto;
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+
+  .header {
+    padding: 0 122px;
+    margin: 108px 0;
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+
+  .about-me {
+    margin-bottom: 32px;
+    padding: 0 122px;
+
+    h2 {
+      font-size: 26px;
+      font-weight: $asap-medium;
+      margin-bottom: 8px;
+    }
+
+    p {
+      line-height: 1.41;
+    }
+  }
+
+  .information {
+    padding: 0 122px;
+
+    .p-rel {
+      position: relative;
+    }
+
+    .section {
+      margin-bottom: 32px;
+
+      .section-header {
+        width: 20%;
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: top;
+      }
+
+      .section-info {
+        width: 79%;
+        display: inline-block;
+
+        .section-info-header {
+          &:not(:first-child) {
+            margin-top: 16px;
+          }
+
+          display: inline-block;
+
+          h3 {
+            font-size: 18px;
+          }
+
+          h4 {
+            color: $secondary-color;
+            font-size: 16px;
+          }
         }
 
-        ul {
-            margin-top: 16px;
+        .section-info-dates {
+          font-size: 16px;
+          float: right;
+          display: inline-block;
+        }
+
+        .section-info-points {
+          margin-top: 16px;
+          margin-left: 16px;
+
+          li {
+            line-height: 1.41;
+
+            &:not(:first-child) {
+              margin-top: 3px;
+            }
+          }
+        }
+
+        .overview-container {
+          display: inline-block;
+          float: left;
+          width: 20%;
+
+          &:not(:last-child) {
+            margin-right: 62px;
+          }
+
+          .overview-header {
+            font-size: 18px;
+            margin-bottom: 3px;
+          }
+
+          ul {
+            list-style: none;
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
 
             li {
-                display: inline-block;
-                font-size: 18px;
-
-                &:not(:last-child) {
-                    margin-right: 24px;
-                }
+              width: 50%;
             }
+          }
         }
+      }
     }
 
-    .header {
-        padding: 0 122px;
-        margin: 108px 0;
+    .vertical-line {
+      position: absolute;
+      left: 24%;
+      background: $mint-color;
+      width: 2px;
+      height: 100%;
+    }
+  }
 
-        h1 {
-            font-size: 48px;
+  footer {
+    height: 250px;
+    color: white;
+    background: $main-color;
+    padding: 75px 122px 40px 122px;
+
+    .details {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+
+      .name {
+        display: block;
+        font-size: 24px;
+        font-weight: $asap-medium;
+        margin-bottom: 5px;
+      }
+
+      .chat {
+        display: block;
+      }
+
+      a {
+        color: $mint-secondary-color;
+        text-decoration: none;
+      }
+
+      .copyright {
+        font-size: 14px;
+        margin-top: 40px;
+
+        span {
+          vertical-align: bottom;
         }
+      }
     }
 
-    .about-me {
-        margin-bottom: 32px;
-        padding: 0 122px;
+    .social-media-links {
+      display: inline-block;
+      float: right;
+      width: 50%;
 
-        h2 {
-            font-size: 26px;
-            font-weight: $asap-medium;
-            margin-bottom: 8px;
-        }
+      ul {
+        list-style: none;
+        float: right;
 
-        p {
-            line-height: 1.41;
+        li {
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+
+          a {
+            color: white;
+          }
+
+          &:not(:last-child) {
+            margin-right: 32px;
+          }
+
+          .fab {
+            font-size: 32px;
+          }
         }
+      }
     }
-
-    .information {
-        position: relative;
-        padding: 0 122px;
-
-        .section {
-            margin-bottom: 32px;
-
-            .section-header {
-                width: 20%;
-                display: inline-block;
-                font-size: 20px;
-                vertical-align: top;
-            }
-
-            .section-info {
-                width: 79%;
-                display: inline-block;
-
-                .section-info-header {
-                    &:not(:first-child) {
-                        margin-top: 16px;
-                    }
-
-                    display: inline-block;
-
-                    h3 {
-                        font-size: 18px;
-                    }
-
-                    h4 {
-                        color: $secondary-color;
-                        font-size: 16px;
-                    }
-                }
-
-                .section-info-dates {
-                    font-size: 16px;
-                    float: right;
-                    display: inline-block;
-                }
-
-                .section-info-points {
-                    margin-top: 16px;
-                    margin-left: 16px;
-
-                    li {
-                        line-height: 1.41;
-
-                        &:not(:first-child) {
-                            margin-top: 3px;
-                        }
-                    }
-                }
-
-                .overview-container {
-                    display: inline-block;
-                    float: left;
-                    width: 20%;
-
-                    &:not(:last-child) {
-                        margin-right: 62px;
-                    }
-
-                    .overview-header {
-                        font-size: 18px;
-                        margin-bottom: 3px;
-                    }
-
-                    ul {
-                        list-style: none;
-                        columns: 2;
-                        -webkit-columns: 2;
-                        -moz-columns: 2;
-
-                        li {
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
-
-        .vertical-line {
-            position: absolute;
-            left: 24%;
-            background: $mint-color;
-            width: 2px;
-            height: 100%;
-        }
-    }
-
-    footer {
-        height: 250px;
-        color: white;
-        background: $main-color;
-        padding: 75px 122px 40px 122px;
-
-        .details {
-            display: inline-block;
-            width: 50%;
-            height: 100%;
-
-            .name {
-                display: block;
-                font-size: 24px;
-                font-weight: $asap-medium;
-                margin-bottom: 5px;
-            }
-
-            .chat {
-                display: block;
-            }
-
-            a {
-                color: $mint-secondary-color;
-                text-decoration: none;
-            }
-
-            .copyright {
-                font-size: 14px;
-                margin-top: 40px;
-
-
-                span {
-                    vertical-align: bottom;
-                }
-            }
-        }
-
-        .social-media-links {
-            display: inline-block;
-            float: right;
-            width: 50%;
-
-            ul {
-                list-style: none;
-                float: right;
-
-                li {
-                    width: 32px;
-                    height: 32px;
-                    display: inline-block;
-
-                    a {
-                        color: white;
-                    }
-
-                    &:not(:last-child) {
-                        margin-right: 32px;
-                    }
-
-                    .fab {
-                        font-size: 32px;
-                    }
-                }
-            }
-        }
-    }
+  }
 }

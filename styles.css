@@ -46,8 +46,10 @@ body .about-me p {
   line-height: 1.41;
 }
 body .information {
-  position: relative;
   padding: 0 122px;
+}
+body .information .p-rel {
+  position: relative;
 }
 body .information .section {
   margin-bottom: 32px;
@@ -72,7 +74,7 @@ body .information .section .section-info .section-info-header h3 {
   font-size: 18px;
 }
 body .information .section .section-info .section-info-header h4 {
-  color: #A1A1A1;
+  color: #a1a1a1;
   font-size: 16px;
 }
 body .information .section .section-info .section-info-dates {
@@ -114,7 +116,7 @@ body .information .section .section-info .overview-container ul li {
 body .information .vertical-line {
   position: absolute;
   left: 24%;
-  background: #42CC9C;
+  background: #42cc9c;
   width: 2px;
   height: 100%;
 }
@@ -139,7 +141,7 @@ body footer .details .chat {
   display: block;
 }
 body footer .details a {
-  color: #00B087;
+  color: #00b087;
   text-decoration: none;
 }
 body footer .details .copyright {
