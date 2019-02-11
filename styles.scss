@@ -6,7 +6,7 @@ $asap-bold: 700;
 $asap-medium: 600;
 $asap-regular: 400;
 
-$mobile-break: 320px;
+$mobile-break: 740px;
 $desktop-break: 1278px;
 
 body {
@@ -21,9 +21,9 @@ body {
   color: $main-color;
 
   @media screen and (min-width: $desktop-break) {
-    width: 1017px;
-    margin: 0 auto;
     nav {
+      width: 1017px;
+      margin: 0 auto;
       padding-top: 24px;
       display: flex;
       font-weight: $asap-regular;
@@ -47,7 +47,8 @@ body {
     }
 
     .header {
-      margin: 108px 0;
+      width: 1017px;
+      margin: 108px auto;
 
       h1 {
         font-size: 48px;
@@ -55,7 +56,8 @@ body {
     }
 
     .about-me {
-      margin-bottom: 32px;
+      width: 1017px;
+      margin: 0 auto 32px auto;
 
       h2 {
         font-size: 26px;
@@ -69,6 +71,9 @@ body {
     }
 
     .information {
+      width: 1017px;
+      margin: 0 auto;
+
       .p-rel {
         position: relative;
       }
@@ -162,9 +167,428 @@ body {
 
     footer {
       height: 250px;
+      // width: 1017px;
+      // margin: 0 auto;
       color: white;
       background: $main-color;
-      padding: 75px 0 40px 0;
+      padding: 75px 122px 40px 122px;
+
+      .details {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+
+        .name {
+          display: block;
+          font-size: 24px;
+          font-weight: $asap-medium;
+          margin-bottom: 5px;
+        }
+
+        .chat {
+          display: block;
+        }
+
+        a {
+          color: $mint-secondary-color;
+          text-decoration: none;
+        }
+
+        .copyright {
+          font-size: 14px;
+          margin-top: 40px;
+
+          span {
+            vertical-align: bottom;
+          }
+        }
+      }
+
+      .social-media-links {
+        display: inline-block;
+        float: right;
+        width: 50%;
+
+        ul {
+          list-style: none;
+          float: right;
+
+          li {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+
+            a {
+              color: white;
+            }
+
+            &:not(:last-child) {
+              margin-right: 32px;
+            }
+
+            .fab {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
+    nav {
+      margin: 0 122px;
+      padding-top: 24px;
+      display: flex;
+      font-weight: $asap-regular;
+
+      .icon {
+        margin-right: auto;
+      }
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          display: inline-block;
+          font-size: 18px;
+
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+
+    .header {
+      margin: 108px 122px;
+
+      h1 {
+        font-size: 48px;
+      }
+    }
+
+    .about-me {
+      margin: 0 122px 32px 122px;
+
+      h2 {
+        font-size: 26px;
+        font-weight: $asap-medium;
+        margin-bottom: 8px;
+      }
+
+      p {
+        line-height: 1.41;
+      }
+    }
+
+    .information {
+      margin: 0 122px;
+
+      .p-rel {
+        position: relative;
+      }
+
+      .section {
+        margin-bottom: 32px;
+
+        .section-header {
+          width: 20%;
+          display: inline-block;
+          font-size: 20px;
+          vertical-align: top;
+        }
+
+        .section-info {
+          width: 79%;
+          display: inline-block;
+
+          .section-info-header {
+            &:not(:first-child) {
+              margin-top: 16px;
+            }
+
+            display: inline-block;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            h4 {
+              color: $secondary-color;
+              font-size: 16px;
+            }
+          }
+
+          .section-info-dates {
+            font-size: 16px;
+            float: right;
+            display: inline-block;
+          }
+
+          .section-info-points {
+            margin-top: 16px;
+            margin-left: 16px;
+
+            li {
+              line-height: 1.41;
+
+              &:not(:first-child) {
+                margin-top: 3px;
+              }
+            }
+          }
+
+          .overview-container {
+            display: inline-block;
+            float: left;
+            width: 180px;
+
+            &:not(:last-child) {
+              margin-right: 62px;
+            }
+
+            .overview-header {
+              font-size: 18px;
+              margin-bottom: 3px;
+            }
+
+            ul {
+              width: 180px;
+              list-style: none;
+              columns: 2;
+              -webkit-columns: 2;
+              -moz-columns: 2;
+
+              li {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .vertical-line {
+        position: absolute;
+        left: 18%;
+        background: $mint-color;
+        width: 2px;
+        height: 100%;
+      }
+    }
+
+    footer {
+      height: 250px;
+      color: white;
+      background: $main-color;
+      padding: 75px 122px 40px 122px;
+
+      .details {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+
+        .name {
+          display: block;
+          font-size: 24px;
+          font-weight: $asap-medium;
+          margin-bottom: 5px;
+        }
+
+        .chat {
+          display: block;
+        }
+
+        a {
+          color: $mint-secondary-color;
+          text-decoration: none;
+        }
+
+        .copyright {
+          font-size: 14px;
+          margin-top: 40px;
+
+          span {
+            vertical-align: bottom;
+          }
+        }
+      }
+
+      .social-media-links {
+        display: inline-block;
+        float: right;
+        width: 50%;
+
+        ul {
+          list-style: none;
+          float: right;
+
+          li {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+
+            a {
+              color: white;
+            }
+
+            &:not(:last-child) {
+              margin-right: 32px;
+            }
+
+            .fab {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $mobile-break) {
+    nav {
+      padding-top: 24px;
+      display: flex;
+      font-weight: $asap-regular;
+
+      .icon {
+        margin-right: auto;
+      }
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          display: inline-block;
+          font-size: 18px;
+
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+
+    .header {
+      margin: 108px 0;
+
+      h1 {
+        font-size: 48px;
+      }
+    }
+
+    .about-me {
+      margin-bottom: 32px;
+
+      h2 {
+        font-size: 26px;
+        font-weight: $asap-medium;
+        margin-bottom: 8px;
+      }
+
+      p {
+        line-height: 1.41;
+      }
+    }
+
+    .information {
+      margin: 0 122px;
+
+      .p-rel {
+        position: relative;
+      }
+
+      .section {
+        margin-bottom: 32px;
+
+        .section-header {
+          width: 20%;
+          display: inline-block;
+          font-size: 20px;
+          vertical-align: top;
+        }
+
+        .section-info {
+          width: 79%;
+          display: inline-block;
+
+          .section-info-header {
+            &:not(:first-child) {
+              margin-top: 16px;
+            }
+
+            display: inline-block;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            h4 {
+              color: $secondary-color;
+              font-size: 16px;
+            }
+          }
+
+          .section-info-dates {
+            font-size: 16px;
+            float: right;
+            display: inline-block;
+          }
+
+          .section-info-points {
+            margin-top: 16px;
+            margin-left: 16px;
+
+            li {
+              line-height: 1.41;
+
+              &:not(:first-child) {
+                margin-top: 3px;
+              }
+            }
+          }
+
+          .overview-container {
+            display: inline-block;
+            float: left;
+            width: 180px;
+
+            &:not(:last-child) {
+              margin-right: 62px;
+            }
+
+            .overview-header {
+              font-size: 18px;
+              margin-bottom: 3px;
+            }
+
+            ul {
+              width: 180px;
+              list-style: none;
+              columns: 2;
+              -webkit-columns: 2;
+              -moz-columns: 2;
+
+              li {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .vertical-line {
+        position: absolute;
+        left: 18%;
+        background: $mint-color;
+        width: 2px;
+        height: 100%;
+      }
+    }
+
+    footer {
+      height: 250px;
+      color: white;
+      background: $main-color;
+      padding: 75px 122px 40px 122px;
 
       .details {
         display: inline-block;
