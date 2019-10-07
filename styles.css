@@ -464,13 +464,13 @@ body * {
   }
   body footer {
     height: 250px;
+    position: relative;
     color: white;
     background: #454545;
     padding: 75px 12px 40px 12px;
   }
   body footer .details {
     display: block;
-    position: relative;
   }
   body footer .details .name {
     display: block;
@@ -493,9 +493,9 @@ body * {
     vertical-align: bottom;
   }
   body footer .social-media-links {
-    display: inline-block;
     position: absolute;
-    right: 10%;
+    bottom: 65px;
+    right: 40px;
   }
   body footer .social-media-links ul {
     list-style: none;
