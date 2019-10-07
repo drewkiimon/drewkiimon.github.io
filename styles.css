@@ -3,16 +3,21 @@ body {
   font-family: "Asap Condensed", sans-serif;
   color: #454545;
 }
+
 body * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 @media screen and (min-width: 1278px) {
   body nav {
     width: 1017px;
     margin: 0 auto;
     padding-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
   }
@@ -179,10 +184,13 @@ body * {
     font-size: 32px;
   }
 }
+
 @media screen and (min-width: 740px) and (max-width: 1278px) {
   body nav {
     margin: 0 122px;
     padding-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
   }
@@ -347,10 +355,13 @@ body * {
     font-size: 32px;
   }
 }
+
 @media screen and (max-width: 740px) {
   body nav {
     margin: 0 12px;
     padding-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
   }
@@ -507,5 +518,4 @@ body * {
     font-size: 32px;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
