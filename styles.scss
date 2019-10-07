@@ -507,7 +507,7 @@ body {
         }
 
         .section-info {
-          display: block;
+          display: inline-block;
 
           .section-info-header {
             &:not(:first-child) {
@@ -528,8 +528,8 @@ body {
 
           .section-info-dates {
             font-size: 16px;
-            float: right;
-            display: inline-block;
+            margin-top: 4px;
+            display: block;
           }
 
           .section-info-points {
@@ -546,13 +546,8 @@ body {
           }
 
           .overview-container {
-            display: inline-block;
-            float: left;
-            width: 180px;
-
-            &:not(:last-child) {
-              margin-right: 62px;
-            }
+            display: block;
+            margin-bottom: 8px;
 
             .overview-header {
               font-size: 18px;
@@ -584,10 +579,10 @@ body {
       color: white;
       background: $main-color;
       padding: 75px 12px 40px 12px;
-      margin-top: 100px;
 
       .details {
         display: block;
+        position: relative;
 
         .name {
           display: block;
@@ -616,7 +611,10 @@ body {
       }
 
       .social-media-links {
-        display: block;
+        display: inline-block;
+        position: absolute;
+
+        right: 10%;
 
         ul {
           list-style: none;
