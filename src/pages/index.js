@@ -36,7 +36,8 @@ export default () => (
         My goal in life is to teach young adults and high school students what
         it means to "adult" through teaching basic financial practices such as
         the difference between a Roth IRA and 401k, and the power of compound
-        interest.
+        interest. Money is something that is not taught in school even though
+        it's one of the core reasons why we work.
         <br />
         <br />I live by the motto "never stop growing". A motto that reminds me
         that your education doesn't stop after college and that investing in
