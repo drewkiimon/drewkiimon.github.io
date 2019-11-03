@@ -1,6 +1,7 @@
 import React from "react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 
 import("../styles.scss")
 import("../../node_modules/font-awesome/css/font-awesome.css")
@@ -8,6 +9,19 @@ import("../../node_modules/font-awesome/css/font-awesome.css")
 export default () => (
   <div>
     <Navigation />
+    <Helmet>
+      <meta charSet="utf-8" />
+      <meta name="description" content="Andrew Pagan's portfolio website" />
+      <meta
+        name="keywords"
+        content="Andrew,Pagan,portfolio,frontend,engineer,software"
+      />
+      <meta name="author" content="Andrew Pagan" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Andrew Pagan</title>
+      <link rel="canonical" href="http://andrewpagan.me" />
+      <html lang="en" />
+    </Helmet>
     <div className="header">
       <h1>Hello, I'm Andrew.</h1>
       <h1>I am a front-end developer.</h1>
