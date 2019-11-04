@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/AP.png"
+import logo from "../../static/AP.png"
 // import { Link } from "gatsby"
 
 // const ListLink = props => (
