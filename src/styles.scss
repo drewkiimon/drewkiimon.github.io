@@ -8,6 +8,8 @@ $asap-bold: 700;
 $asap-medium: 600;
 $asap-regular: 400;
 
+$default-desktop-width: 1017px;
+
 $mobile-break: 740px;
 $desktop-break: 1278px;
 
@@ -24,7 +26,7 @@ body {
 
   @media screen and (min-width: $desktop-break) {
     nav {
-      width: 1017px;
+      width: $default-desktop-width;
       margin: 0 auto;
       padding-top: 24px;
       display: flex;
@@ -49,7 +51,7 @@ body {
     }
 
     .header {
-      width: 1017px;
+      width: $default-desktop-width;
       margin: 108px auto;
 
       h1 {
@@ -58,7 +60,7 @@ body {
     }
 
     .about-me {
-      width: 1017px;
+      width: $default-desktop-width;
       margin: 0 auto 32px auto;
 
       h2 {
@@ -73,7 +75,7 @@ body {
     }
 
     .information {
-      width: 1017px;
+      width: $default-desktop-width;
       margin: 0 auto;
 
       .p-rel {
@@ -169,8 +171,6 @@ body {
 
     footer {
       height: 250px;
-      // width: 1017px;
-      // margin: 0 auto;
       color: white;
       background: $main-color;
       padding: 75px 122px 40px 122px;
