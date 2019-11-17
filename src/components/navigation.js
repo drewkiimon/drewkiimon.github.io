@@ -1,6 +1,6 @@
 import React from "react"
 import logo from "../../static/AP.png"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 // const ListLink = props => (
 //   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -17,11 +17,15 @@ export default () => (
       width="72"
       alt="Andrew Pagan the Third logo"
     />
-    {/* <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Blog</li>
-      <li>Contact</li>
-    </ul> */}
+    <ul>
+      <li>
+      <Link to="">About</Link>
+      </li>
+      {/* <li>Projects</li> */}
+      <li>
+        <Link to="/blog">Blog</Link>
+      </li>
+      {/* <li>Contact</li> */}
+    </ul>
   </nav>
 )
