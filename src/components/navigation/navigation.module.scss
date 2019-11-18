@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Asap+Condensed:400,600,700");
+
+$main-color: #454545;
+$secondary-color: #a1a1a1;
+$mint-color: #42cc9c;
+$mint-secondary-color: #00b087;
+$asap-bold: 700;
+$asap-medium: 600;
+$asap-regular: 400;
+
+$default-desktop-width: 1017px;
+
+$mobile-break: 740px;
+$desktop-break: 1278px;
+
+@media screen and (min-width: $desktop-break) {
+    nav {
+      width: $default-desktop-width;
+      margin: 0 auto;
+      padding-top: 24px;
+      display: flex;
+      font-weight: $asap-regular;
+
+      .icon {
+        margin-right: auto;
+      }
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          display: inline-block;
+          font-size: 18px;
+
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
+    nav {
+      margin: 0 122px;
+      padding-top: 24px;
+      display: flex;
+      font-weight: $asap-regular;
+
+      .icon {
+        margin-right: auto;
+      }
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          display: inline-block;
+          font-size: 18px;
+
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: $mobile-break) {
+    nav {
+      margin: 0 12px;
+      padding-top: 24px;
+      display: flex;
+      font-weight: $asap-regular;
+
+      .icon {
+        margin-right: auto;
+      }
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          display: inline-block;
+          font-size: 18px;
+
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+}

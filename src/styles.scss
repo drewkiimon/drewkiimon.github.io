@@ -25,31 +25,6 @@ body {
   color: $main-color;
 
   @media screen and (min-width: $desktop-break) {
-    nav {
-      width: $default-desktop-width;
-      margin: 0 auto;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
-
-      .icon {
-        margin-right: auto;
-      }
-
-      ul {
-        margin-top: 16px;
-
-        li {
-          display: inline-block;
-          font-size: 18px;
-
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
-        }
-      }
-    }
-
     .header {
       width: $default-desktop-width;
       margin: 108px auto;
@@ -237,30 +212,6 @@ body {
     }
   }
   @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-    nav {
-      margin: 0 122px;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
-
-      .icon {
-        margin-right: auto;
-      }
-
-      ul {
-        margin-top: 16px;
-
-        li {
-          display: inline-block;
-          font-size: 18px;
-
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
-        }
-      }
-    }
-
     .header {
       margin: 108px 122px;
 
@@ -446,30 +397,6 @@ body {
     }
   }
   @media screen and (max-width: $mobile-break) {
-    nav {
-      margin: 0 12px;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
-
-      .icon {
-        margin-right: auto;
-      }
-
-      ul {
-        margin-top: 16px;
-
-        li {
-          display: inline-block;
-          font-size: 18px;
-
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
-        }
-      }
-    }
-
     .header {
       margin: 108px 12px;
 
