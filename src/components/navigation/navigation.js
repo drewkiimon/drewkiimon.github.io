@@ -1,8 +1,7 @@
 import React from "react"
 import logo from "../../../static/AP.png"
 import { Link } from "gatsby"
-
-import("./navigation.module.scss")
+import navigationStyles from "./navigation.module.scss"
 
 const ListLink = props => (
   <li>
@@ -11,7 +10,7 @@ const ListLink = props => (
 )
 
 export default () => (
-  <nav>
+  <nav className={navigationStyles.nav}>
     <img
       className="icon"
       src={logo}

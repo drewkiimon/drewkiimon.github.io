@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/apagan/Documents/drewkiimon-repos/drewkiimon.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('C:/Users/Andrew/Documents/Github Repos/drewkiimon.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Andrew Pagan","short_name":"AP","start_url":"/","background_color":"#6b37bf","theme_color":"#6b37bf","display":"standalone","icon":"static/AP.png"},
     },{
-      plugin: require('/Users/apagan/Documents/drewkiimon-repos/drewkiimon.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('C:/Users/Andrew/Documents/Github Repos/drewkiimon.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/apagan/Documents/drewkiimon-repos/drewkiimon.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/Andrew/Documents/Github Repos/drewkiimon.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

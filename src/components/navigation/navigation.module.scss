@@ -14,80 +14,83 @@ $mobile-break: 740px;
 $desktop-break: 1278px;
 
 @media screen and (min-width: $desktop-break) {
-    nav {
-      width: $default-desktop-width;
-      margin: 0 auto;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
+  .nav {
+    width: $default-desktop-width;
+    margin: 0 auto;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-      .icon {
-        margin-right: auto;
-      }
+    .icon {
+      margin-right: auto;
+    }
 
-      ul {
-        margin-top: 16px;
+    ul {
+      margin-left: auto;
+      margin-top: 16px;
 
-        li {
-          display: inline-block;
-          font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
+        &:not(:last-child) {
+          margin-right: 24px;
         }
       }
     }
+  }
 }
 
 @media screen and (min-width: $mobile-break) and (max-width: $desktop-break) {
-    nav {
-      margin: 0 122px;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
+  .nav {
+    margin: 0 122px;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-      .icon {
-        margin-right: auto;
-      }
+    .icon {
+      margin-right: auto;
+    }
 
-      ul {
-        margin-top: 16px;
+    ul {
+      margin-left: auto;
+      margin-top: 16px;
 
-        li {
-          display: inline-block;
-          font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
+        &:not(:last-child) {
+          margin-right: 24px;
         }
       }
     }
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
-    nav {
-      margin: 0 12px;
-      padding-top: 24px;
-      display: flex;
-      font-weight: $asap-regular;
+  .nav {
+    margin: 0 12px;
+    padding-top: 24px;
+    display: flex;
+    font-weight: $asap-regular;
 
-      .icon {
-        margin-right: auto;
-      }
+    .icon {
+      margin-right: auto;
+    }
 
-      ul {
-        margin-top: 16px;
+    ul {
+      margin-left: auto;
+      margin-top: 16px;
 
-        li {
-          display: inline-block;
-          font-size: 18px;
+      li {
+        display: inline-block;
+        font-size: 18px;
 
-          &:not(:last-child) {
-            margin-right: 24px;
-          }
+        &:not(:last-child) {
+          margin-right: 24px;
         }
       }
     }
+  }
 }
