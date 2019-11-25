@@ -22,6 +22,7 @@ export default () => (
       <link rel="canonical" href="http://andrewpagan.me" />
       <html lang="en" />
     </Helmet>
+
     <Navigation />
 
     <div className="header">
