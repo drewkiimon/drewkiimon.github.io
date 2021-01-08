@@ -1,0 +1,52 @@
+{
+  "education": {
+    "degree": "B.S. in Computer Engineering",
+    "school": "Universify of California, Santa Barbara",
+    "startDate": "November 2012",
+    "endDate": "June 2016"
+  },
+  "experience": {
+    "jobs": [
+      {
+        "company": "Reputation.com",
+        "title": "Senior Software Engineer",
+        "startDate": "October 2018",
+        "endDate": "Present",
+        "details": [
+          "Strengthened a core library of platform-wide components for easy reusability and uniformed brand identity",
+          "Clarified legacy code and documentation, increasing productivity and readability of codebase",
+          "Reduced clicks by 70% on our internal ticket system, allowing for SLA enforcement and on-demand reporting",
+          "Boosted user engagement by 30% by creating internal and external widgets for visualizing client data"
+        ]
+      },
+      {
+        "company": "Genentech",
+        "title": "Software Engineer",
+        "startDate": "May 2017",
+        "endDate": "October 2018",
+        "details": [
+          "Overhauled department’s promotional process by developing a web application using React and Redux to automate data retrieval and document creation, saving 15 hours per nominee.",
+          "Scripted applications using Python frameworks (Pandas, Numpy) to clean and organize large data sets for data visualization platforms.",
+          "Reconciled financial data for 16 cost centers, reducing expenditures by 20% as a result of developing analytics platform using JavaScript and Tableau for manager’s decision making.",
+          "Optimized work-hour allocations for facilities management by redesigning application using Bootstrap, CSS3, and HTML5, leading to a decrease of underutilized hours."
+        ]
+      },
+      {
+        "company": "Hitachi Data Systems",
+        "title": "Software QA Engineer",
+        "startDate": "January 2017",
+        "endDate": "April 2017",
+        "details": [
+          "Facilitated software testing to provide feedback to developers as part of the software development cycle.",
+          "Expanded internal QA libraries with Python scripts that identified potential hazards to software deployment.",
+          " Streamlined the product-to-market pipeline by reproducing bugs and implementing preventative measures via Python scripts."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "languages": ["JavaScript (ES6)", "Python"],
+    "frameworks": ["React", "Redux", "AngularJS", "Bootstrap", "LESS/SCSS"],
+    "tools": ["Tableau"]
+  }
+}
