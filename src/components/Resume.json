@@ -45,8 +45,14 @@
     ]
   },
   "skills": {
-    "languages": ["JavaScript (ES6)", "Python"],
-    "frameworks": ["React", "Redux", "AngularJS", "Bootstrap", "LESS/SCSS"],
-    "tools": ["Tableau"]
+    "languages": ["JavaScript", "Python"],
+    "frameworksTools": [
+      "React",
+      "Redux",
+      "AngularJS",
+      "Bootstrap",
+      "LESS/SCSS",
+      "Tableau"
+    ]
   }
 }
