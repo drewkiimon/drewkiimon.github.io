@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":[],"mappings":"2FAAA,gCAEe,4BAAM","file":"component---src-pages-404-js-173c118f30d218ba30b2.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default () => <div>What page are you even looking for dog?</div>\r\n"],"sourceRoot":""}
