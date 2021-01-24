@@ -15,11 +15,13 @@ export default () => (
       <div className="chat">
         <span>
           Let's chat. --
-          <a href="mailto:andrew.r.pagan@gmail.com">andrew.r.pagan@gmail.com</a>
+          <a href="mailto:andrew.r.pagan@gmail.com">
+            andrew.r.pagan at gmail.com
+          </a>
         </span>
       </div>
       <div className="copyright">
-        <span>©2019 Andrew Pagan</span>
+        <span>©2021 Andrew Pagan</span>
       </div>
     </div>
     <div className="social-media-links">
