@@ -10,13 +10,23 @@
       {
         "company": "Reputation.com",
         "title": "Senior Software Engineer",
-        "startDate": "October 2018",
+        "startDate": "November 2020",
         "endDate": "Present",
         "details": [
-          "Strengthened a core library of platform-wide components for easy reusability and uniformed brand identity",
-          "Clarified legacy code and documentation, increasing productivity and readability of codebase",
-          "Reduced clicks by 70% on our internal ticket system, allowing for SLA enforcement and on-demand reporting",
-          "Boosted user engagement by 30% by creating internal and external widgets for visualizing client data"
+          "Led frontend development of internal CRM system, reducing clicks per ticket by 70%, allowing for SLA enforcement and on-demand reporting",
+          "Designed a universal, FAQ widget to enhance Google SEO, boosting user engagement and click through rate by 15%",
+          "Identified and resolved bottleneck challenges for low bandwidth users in legacy code through smart caching and identifying key data points, increasing productivity and code maintainability",
+          "Mentored onboarding junior engineers and frequently updated onboarding documentation, decreasing new engineers ramp up time"
+        ]
+      },
+      {
+        "company": "Reputation.com",
+        "title": "Software Engineer",
+        "startDate": "October 2018",
+        "endDate": "November 2020",
+        "details": [
+          "Collaborated with product management to identify user challenges, which lead to developing more interactive charts to visualize customer data",
+          "Led daily standups to identify blockers, progress of different projects, and ensuring teammates were getting the support they needed"
         ]
       },
       {
